@@ -1,0 +1,7 @@
+Fig,Slide,What it shows,Location in working file
+Fig1,3,"Raw mean tariff rate, 10 selected countries, with reform year",Notebook cell 25 -> figures/Fig1.png
+Fig2,5,"GNI per capita index aligned on reform year, 10 cases + median",Notebook cell 26 -> figures/Fig2.png
+Fig3,6,"Pre vs post GNI per capita CAGR and benchmark, by country",Notebook cell 27 -> figures/Fig3.png
+Fig4,7,"Excess GNI growth over benchmark, counterexamples in red",Notebook cell 28 -> figures/Fig4.png
+Fig5,6,Life expectancy gain aligned on reform year,Notebook cell 29 -> figures/Fig5.png
+Fig6,9,Nepal vs South Asian peers: tariff and GNI per capita,Notebook cell 30 -> figures/Fig6.png

@@ -1,0 +1,11 @@
+iso3,country,reform_year_notebook,status_notebook,reform_year_csv,status_csv
+IND,India,1991,VERIFIED (primary source read),1991.0,VERIFIED (primary source: budget speech)
+BGD,Bangladesh,1995,UNVERIFIED,1992.0,VERIFIED (WTO TPR; baseline-dated)
+PAK,Pakistan,1997,UNVERIFIED,1997.0,VERIFIED (SPDC + WTO TPR; year-level)
+CHN,China,1992,UNVERIFIED,1992.0,VERIFIED (open PIIE book chapter)
+MUS,Mauritius,1999,UNVERIFIED,,EXCLUDED (no verifiable reform date)
+THA,Thailand,1995,UNVERIFIED,,EXCLUDED (no verifiable reform date)
+PHL,Philippines,1995,VERIFIED (primary source read),1995.0,VERIFIED (primary source: executive orders)
+KEN,Kenya,1993,UNVERIFIED,1992.0,VERIFIED (WTO TPR; baseline-dated)
+CIV,Cote d'Ivoire,2000,UNVERIFIED,1998.0,VERIFIED (WTO TPR; shared WAEMU reform)
+SEN,Senegal,2000,UNVERIFIED,1998.0,VERIFIED (WTO TPR; shared WAEMU reform)
