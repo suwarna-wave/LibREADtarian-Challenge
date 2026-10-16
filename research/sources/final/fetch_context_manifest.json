@@ -1,0 +1,64 @@
+[
+  {
+    "id": "efw2026_method",
+    "url": "https://www.cato.org/sites/cato.org/files/2026-10/EFW-2026-Appendix.pdf",
+    "status": 403,
+    "bytes": 883,
+    "sha256": "fc4d85e47e873bba03940ed7b8dc6bef8ee126d57520fdd5dd5aa4e17aae99b0",
+    "text_chars": 83,
+    "links": [],
+    "accessed": "2026-10-16"
+  },
+  {
+    "id": "efw2026_publisher",
+    "url": "https://www.cato.org/economic-freedom-world/2026",
+    "status": 403,
+    "bytes": 880,
+    "sha256": "3ed90f5bbc29d589c16eb60d066af4027e663868a18b620da22131b850792794",
+    "text_chars": 82,
+    "links": [],
+    "accessed": "2026-10-16"
+  },
+  {
+    "id": "civ_conflict2003",
+    "url": "https://documents1.worldbank.org/curated/en/221511468243587148/pdf/271410IVC.pdf",
+    "status": 200,
+    "bytes": 7313330,
+    "sha256": "9b26db13eec691e388c98097e94268e646d798908a4e94c76824d8c0cf9fe99a",
+    "text_chars": 236657,
+    "links": [],
+    "accessed": "2026-10-16"
+  },
+  {
+    "id": "tha_crisis1999",
+    "url": "https://www.wto.org/english/tratop_e/tpr_e/tp122_e.htm",
+    "status": 200,
+    "bytes": 48718,
+    "sha256": "9b8a6b03018d1b1992ad2673da89f4ab9a2ec70ab5a9babfb8593214b256f782",
+    "text_chars": 40501,
+    "links": [
+      "http://www.wto.org/index.htm",
+      "http://www.wto.org/english/thewto_e/thewto_e.htm",
+      "http://www.wto.org/english/news_e/news_e.htm",
+      "http://www.wto.org/english/tratop_e/tratop_e.htm",
+      "http://www.wto.org/english/thewto_e/whatis_e/tif_e/org6_e.htm",
+      "http://www.wto.org/english/res_e/res_e.htm",
+      "http://www.wto.org/english/forums_e/forums_e.htm",
+      "http://www.wto.org/english/info_e/cont_e.htm",
+      "http://www.wto.org/english/info_e/site2_e.htm",
+      "http://www.wto.org/english/info_e/site_e.htm",
+      "http://search.wto.org/search?site=English_website&proxystylesheet=english_frontend&output=xml_no_dtd&client=english_frontend&proxycustom=%3CADVANCED/%3E&numgm=5",
+      "../../../spanish/tratop_s/tpr_s/tp122_s.htm",
+      "../../../french/tratop_f/tpr_f/tp122_f.htm",
+      "../../../index.htm",
+      "../tratop_e.htm",
+      "tpr_e.htm",
+      "tp_rep_e.htm",
+      "../tratop_e.htm",
+      "tp123_e.htm",
+      "tp123_e.htm#chair",
+      "#top"
+    ],
+    "accessed": "2026-10-16"
+  }
+]

@@ -1,39 +1,17 @@
-# Policy notes — tariff liberalisation (working draft)
+# Policy notes — current research decisions, 16 October 2026
 
-Status: **case selection done by rule; reform dates NOT yet verified.** Nothing below may be used in the deck until each date is confirmed against a primary/open source that has been opened and read (not a search-engine summary).
+Participant: Suwarna Pyakurel, solo. This replaces the stale working notes; historical versions are preserved in `research/archive_2026-10-13/`.
 
-## Topic (confirmed with user)
-Tariff cuts (EFW 4Aii mean tariff rate) → GNI per capita growth. Recommendation target: Nepal (tariff schedule). Colab data via public URL (to be provided).
+Topic: documented tariff-cutting episodes and subsequent UNDP GNI/person, with one Nepal recommendation. The question is descriptive and the policy choice also rests on a liberty argument. No growth premium is identified.
 
-## Case-selection rule (proposed)
-Countries whose **raw mean tariff rate** (EFW Ratings, column right after "4Aii Mean tariff rate", %) fell by **≥ 20 percentage points between 1995 and 2005**, with UNDP GNI per capita available.
-Raw rate is used (not the 0–10 score) because the score is floored at 0 for tariffs above ~50%, which hides most of the Indian-subcontinent change.
+Selection: raw EFW mean tariff fell ≥20 pp in 1995–2005; all ten screened cases remain visible. Main sample: IND1991, CHN1992, MUS1994, THA1995, PHL1995, PAK1997, CIV1998 and SEN1998. BGD/KEN are timing-uncertain additions in sensitivity, not silently discarded. The precise reasons, locations and URLs are in `reform_dates.csv`.
 
-Result from `economic freedom.xlsx` (computed, 1995 → 2005, pp change):
-Bangladesh −64.4, Pakistan −46.5, India −38.2, China −28.3, Mauritius −27.7, Thailand −25.4, Philippines −22.2, Kenya −21.9, Côte d'Ivoire −20.4, Senegal −20.2 (10 countries).
-Next just outside the rule: Madagascar −18.4, Rwanda −17.6, Malawi −17.3, Burundi −17.3 (borderline; mention as sensitivity).
+Dating means the start of a documented broad tariff-cutting phase, not necessarily first liberalisation ever. Sources range from budgets/executive orders to retrospective institutional accounts and differ in precision. The date decisions followed exploratory analysis. No claim of preregistration is made. Thailand and Mauritius exclusions in the earlier table are corrected. CIV and SEN are related national implementations of the same regional reform.
 
-Nepal for comparison: mean tariff 22.6 (1990) → 16.1 (1995) → 14.7 (2000) → 14.7 (2005) → 12.3 (2010). Smaller, earlier fall; does not meet rule — useful as the recommendation target, not a case.
+Main window: event −5…+10, actual outcome years 1990–2008. Full pre-growth requires all five elapsed years; short available-history growth remains separately exported. All main cases have valid ten-year endpoints. Median comparator uses valid endpoint pairs and excludes all screened cases.
 
-## Reform-dating rule (proposed, to confirm with user)
-`reform_year` = first fiscal/calendar year in which the government's **main multi-band tariff cut took legal effect** (budget/finance act/customs notification), confirmed in an open document. EFW years are only used as a sanity check.
+Required-sheet interpretation: both chain-linked panel Area4 and raw Ratings tariffs are now analysed, with separate labels and charts. Organiser scope acceptance still needs confirmation; adding the panel chart is not itself approval.
 
-## Per-country date log (fill in; every row needs URL + access date)
-| Country | Candidate reform (UNVERIFIED lead) | Effective date | Source URL | Accessed |
-|---|---|---|---|---|
-| Bangladesh | FY1994/95 max tariff cut (~300%→60%), 6 bands — lead only | ? | ? | ? |
-| Pakistan | 1997-98 budget tariff rationalisation; 2001-02 further cut — lead only | ? | ? | ? |
-| India | 1991-92 peak 150%; 1997-98 peak 50%→40% — lead only | ? | ? | ? |
-| China | ? | ? | ? | ? |
-| Mauritius | ? | ? | ? | ? |
-| Thailand | ? | ? | ? | ? |
-| Philippines | ? (EO 470 / 1995 tariff programme) | ? | ? | ? |
-| Kenya | ? | ? | ? | ? |
-| Côte d'Ivoire | ? (WAEMU common external tariff, 2000) | ? | ? | ? |
-| Senegal | ? (WAEMU common external tariff, 2000) | ? | ? | ? |
+Alternative explanations include wider liberalisation/stabilisation, regional financial crisis, country conflict and sectoral composition. Country-specific factual leads must remain tied to sources; do not present hypotheses as quantified causal explanations.
 
-## Known issues to disclose
-- EFW is 5-yearly before 2000 → EFW cannot date reforms before 2000 precisely.
-- UNDP starts 1990: reforms in 1991–94 (e.g. India 1991) have <5 pre-years. Shorter pre-window must be stated on charts.
-- Côte d'Ivoire and Senegal share one WAEMU tariff reform → not independent cases; handle explicitly.
-- Concurrent reforms (exchange rate, IMF programmes, privatisation) are the main alternative explanation.
+One policy recommendation is defined in `policy_recommendation.md`. Its ceiling is a proposed design choice and is not estimated by our event comparison. All analytical outputs live under `outputs/` and are regenerated by `analysis.ipynb`.

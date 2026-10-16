@@ -1,0 +1,47 @@
+{
+  "n": 8,
+  "above": 4,
+  "median_excess_pp": 0.06345606573127105,
+  "median_post_cagr_pct": 2.544313149489419,
+  "n_post_positive": 7,
+  "full_pre_n": 5,
+  "accelerated": 3,
+  "timing_grid_above_min": 5,
+  "timing_grid_above_max": 5,
+  "timing_grid_median_min": 0.06345606573127105,
+  "timing_grid_median_max": 0.06345606573127105,
+  "balanced_n": 5,
+  "participant": "Suwarna Pyakurel",
+  "main_cases": [
+    "IND",
+    "CHN",
+    "MUS",
+    "THA",
+    "PHL",
+    "PAK",
+    "CIV",
+    "SEN"
+  ],
+  "calendar_event_range": [
+    1990,
+    2008
+  ],
+  "benchmark_valid_n_range": [
+    148,
+    152
+  ],
+  "not_above": [
+    "Pakistan",
+    "Thailand",
+    "Senegal",
+    "C\u00f4te d'Ivoire"
+  ],
+  "positive_cases": [
+    "China",
+    "India",
+    "Mauritius",
+    "Philippines"
+  ],
+  "nepal_tariff_latest_year": 2024,
+  "nepal_tariff_latest_pct": 12.9
+}

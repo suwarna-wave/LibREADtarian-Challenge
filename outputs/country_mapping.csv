@@ -1,0 +1,197 @@
+iso3,efw_name,undp_name,_merge
+AFG,,Afghanistan,right_only
+AGO,Angola,Angola,both
+ALB,Albania,Albania,both
+AND,,Andorra,right_only
+ARE,United Arab Emirates,United Arab Emirates,both
+ARG,Argentina,Argentina,both
+ARM,Armenia,Armenia,both
+ATG,,Antigua and Barbuda,right_only
+AUS,Australia,Australia,both
+AUT,Austria,Austria,both
+AZE,Azerbaijan,Azerbaijan,both
+BDI,Burundi,Burundi,both
+BEL,Belgium,Belgium,both
+BEN,Benin,Benin,both
+BFA,Burkina Faso,Burkina Faso,both
+BGD,Bangladesh,Bangladesh,both
+BGR,Bulgaria,Bulgaria,both
+BHR,Bahrain,Bahrain,both
+BHS,"Bahamas, The",Bahamas,both
+BIH,Bosnia and Herzegovina,Bosnia and Herzegovina,both
+BLR,Belarus,Belarus,both
+BLZ,Belize,Belize,both
+BOL,Bolivia,Bolivia (Plurinational State of),both
+BRA,Brazil,Brazil,both
+BRB,Barbados,Barbados,both
+BRN,Brunei Darussalam,Brunei Darussalam,both
+BTN,Bhutan,Bhutan,both
+BWA,Botswana,Botswana,both
+CAF,Central African Republic,Central African Republic,both
+CAN,Canada,Canada,both
+CHE,Switzerland,Switzerland,both
+CHL,Chile,Chile,both
+CHN,China,China,both
+CIV,Côte d'Ivoire,Côte d'Ivoire,both
+CMR,Cameroon,Cameroon,both
+COD,"Congo, Dem. Rep.",Congo (Democratic Republic of the),both
+COG,"Congo, Rep.",Congo,both
+COL,Colombia,Colombia,both
+COM,Comoros,Comoros,both
+CPV,Cabo Verde,Cabo Verde,both
+CRI,Costa Rica,Costa Rica,both
+CUB,,Cuba,right_only
+CYP,Cyprus,Cyprus,both
+CZE,Czechia,Czechia,both
+DEU,Germany,Germany,both
+DJI,Djibouti,Djibouti,both
+DMA,,Dominica,right_only
+DNK,Denmark,Denmark,both
+DOM,Dominican Republic,Dominican Republic,both
+DZA,Algeria,Algeria,both
+ECU,Ecuador,Ecuador,both
+EGY,"Egypt, Arab Rep.",Egypt,both
+ERI,,Eritrea,right_only
+ESP,Spain,Spain,both
+EST,Estonia,Estonia,both
+ETH,Ethiopia,Ethiopia,both
+FIN,Finland,Finland,both
+FJI,Fiji,Fiji,both
+FRA,France,France,both
+FSM,,Micronesia (Federated States of),right_only
+GAB,Gabon,Gabon,both
+GBR,United Kingdom,United Kingdom,both
+GEO,Georgia,Georgia,both
+GHA,Ghana,Ghana,both
+GIN,Guinea,Guinea,both
+GMB,"Gambia, The",Gambia,both
+GNB,Guinea-Bissau,Guinea-Bissau,both
+GNQ,,Equatorial Guinea,right_only
+GRC,Greece,Greece,both
+GRD,,Grenada,right_only
+GTM,Guatemala,Guatemala,both
+GUY,Guyana,Guyana,both
+HKG,"Hong Kong SAR, China","Hong Kong, China (SAR)",both
+HND,Honduras,Honduras,both
+HRV,Croatia,Croatia,both
+HTI,Haiti,Haiti,both
+HUN,Hungary,Hungary,both
+IDN,Indonesia,Indonesia,both
+IND,India,India,both
+IRL,Ireland,Ireland,both
+IRN,"Iran, Islamic Rep.",Iran (Islamic Republic of),both
+IRQ,Iraq,Iraq,both
+ISL,Iceland,Iceland,both
+ISR,Israel,Israel,both
+ITA,Italy,Italy,both
+JAM,Jamaica,Jamaica,both
+JOR,Jordan,Jordan,both
+JPN,Japan,Japan,both
+KAZ,Kazakhstan,Kazakhstan,both
+KEN,Kenya,Kenya,both
+KGZ,Kyrgyz Republic,Kyrgyzstan,both
+KHM,Cambodia,Cambodia,both
+KIR,,Kiribati,right_only
+KNA,,Saint Kitts and Nevis,right_only
+KOR,"Korea, Rep.",Korea (Republic of),both
+KWT,Kuwait,Kuwait,both
+LAO,Lao PDR,Lao People's Democratic Republic,both
+LBN,Lebanon,Lebanon,both
+LBR,Liberia,Liberia,both
+LBY,Libya,Libya,both
+LCA,,Saint Lucia,right_only
+LIE,,Liechtenstein,right_only
+LKA,Sri Lanka,Sri Lanka,both
+LSO,Lesotho,Lesotho,both
+LTU,Lithuania,Lithuania,both
+LUX,Luxembourg,Luxembourg,both
+LVA,Latvia,Latvia,both
+MAR,Morocco,Morocco,both
+MCO,,Monaco,right_only
+MDA,Moldova,Moldova (Republic of),both
+MDG,Madagascar,Madagascar,both
+MDV,,Maldives,right_only
+MEX,Mexico,Mexico,both
+MHL,,Marshall Islands,right_only
+MKD,North Macedonia,North Macedonia,both
+MLI,Mali,Mali,both
+MLT,Malta,Malta,both
+MMR,Myanmar,Myanmar,both
+MNE,Montenegro,Montenegro,both
+MNG,Mongolia,Mongolia,both
+MOZ,Mozambique,Mozambique,both
+MRT,Mauritania,Mauritania,both
+MUS,Mauritius,Mauritius,both
+MWI,Malawi,Malawi,both
+MYS,Malaysia,Malaysia,both
+NAM,Namibia,Namibia,both
+NER,Niger,Niger,both
+NGA,Nigeria,Nigeria,both
+NIC,Nicaragua,Nicaragua,both
+NLD,Netherlands,Netherlands,both
+NOR,Norway,Norway,both
+NPL,Nepal,Nepal,both
+NRU,,Nauru,right_only
+NZL,New Zealand,New Zealand,both
+OMN,Oman,Oman,both
+PAK,Pakistan,Pakistan,both
+PAN,Panama,Panama,both
+PER,Peru,Peru,both
+PHL,Philippines,Philippines,both
+PLW,,Palau,right_only
+PNG,Papua New Guinea,Papua New Guinea,both
+POL,Poland,Poland,both
+PRK,,Korea (Democratic People's Rep. of),right_only
+PRT,Portugal,Portugal,both
+PRY,Paraguay,Paraguay,both
+PSE,,"Palestine, State of",right_only
+QAT,Qatar,Qatar,both
+ROU,Romania,Romania,both
+RUS,Russian Federation,Russian Federation,both
+RWA,Rwanda,Rwanda,both
+SAU,Saudi Arabia,Saudi Arabia,both
+SDN,Sudan,Sudan,both
+SEN,Senegal,Senegal,both
+SGP,Singapore,Singapore,both
+SLB,,Solomon Islands,right_only
+SLE,Sierra Leone,Sierra Leone,both
+SLV,El Salvador,El Salvador,both
+SMR,,San Marino,right_only
+SOM,Somalia,Somalia,both
+SRB,Serbia,Serbia,both
+SSD,,South Sudan,right_only
+STP,,Sao Tome and Principe,right_only
+SUR,Suriname,Suriname,both
+SVK,Slovak Republic,Slovakia,both
+SVN,Slovenia,Slovenia,both
+SWE,Sweden,Sweden,both
+SWZ,Eswatini,Eswatini (Kingdom of),both
+SYC,Seychelles,Seychelles,both
+SYR,Syrian Arab Republic,Syrian Arab Republic,both
+TCD,Chad,Chad,both
+TGO,Togo,Togo,both
+THA,Thailand,Thailand,both
+TJK,Tajikistan,Tajikistan,both
+TKM,,Turkmenistan,right_only
+TLS,Timor-Leste,Timor-Leste,both
+TON,,Tonga,right_only
+TTO,Trinidad and Tobago,Trinidad and Tobago,both
+TUN,Tunisia,Tunisia,both
+TUR,Türkiye,Türkiye,both
+TUV,,Tuvalu,right_only
+TWN,Taiwan,,left_only
+TZA,Tanzania,Tanzania (United Republic of),both
+UGA,Uganda,Uganda,both
+UKR,Ukraine,Ukraine,both
+URY,Uruguay,Uruguay,both
+USA,United States,United States,both
+UZB,,Uzbekistan,right_only
+VCT,,Saint Vincent and the Grenadines,right_only
+VEN,"Venezuela, RB",Venezuela (Bolivarian Republic of),both
+VNM,Vietnam,Viet Nam,both
+VUT,,Vanuatu,right_only
+WSM,,Samoa,right_only
+YEM,"Yemen, Rep.",Yemen,both
+ZAF,South Africa,South Africa,both
+ZMB,Zambia,Zambia,both
+ZWE,Zimbabwe,Zimbabwe,both

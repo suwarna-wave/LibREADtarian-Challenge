@@ -1,7 +1,9 @@
-Fig,Slide,What it shows,Location in working file
-Fig1,3,"Raw mean tariff rate, 10 selected countries, with reform year",Notebook cell 25 -> figures/Fig1.png
-Fig2,5,"GNI per capita index aligned on reform year, 10 cases + median",Notebook cell 26 -> figures/Fig2.png
-Fig3,6,"Pre vs post GNI per capita CAGR and benchmark, by country",Notebook cell 27 -> figures/Fig3.png
-Fig4,7,"Excess GNI growth over benchmark, counterexamples in red",Notebook cell 28 -> figures/Fig4.png
-Fig5,6,Life expectancy gain aligned on reform year,Notebook cell 29 -> figures/Fig5.png
-Fig6,9,Nepal vs South Asian peers: tariff and GNI per capita,Notebook cell 30 -> figures/Fig6.png
+figure,slide,title,data,file,notebook_cell
+Fig1,3,All ten screened countries: observed tariff histories,outputs/Fig1_data.csv,figures/Fig1.png,17
+Fig2,4,Broader trade institutions: the chain-linked EFW panel,outputs/Fig2_data.csv,figures/Fig2.png,18
+Fig3,12,Raw income histories before making event comparisons,outputs/Fig3_data.csv,figures/Fig3.png,19
+Fig4,5,Income around the documented tariff-cutting episodes,outputs/Fig4_data.csv,figures/Fig4.png,20
+Fig5,6,"Income growth: before, after, and in other countries",outputs/Fig5_data.csv,figures/Fig5.png,21
+Fig6,7,Which countries exceeded the broad comparator?,outputs/Fig6_data.csv,figures/Fig6.png,22
+Fig7,7,Timing sensitivity: the denominator follows valid data,outputs/Fig7_data.csv,figures/Fig7.png,23
+Fig8,9,Nepal: a different starting point from the largest cutters,outputs/Fig8_data.csv,figures/Fig8.png,24

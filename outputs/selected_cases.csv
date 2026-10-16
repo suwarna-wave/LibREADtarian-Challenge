@@ -1,0 +1,11 @@
+iso3,tariff_1995_pct,tariff_2005_pct,change_pp,country,selected
+BGD,81.2,16.8,-64.4,Bangladesh,True
+PAK,61.1,14.6,-46.5,Pakistan,True
+IND,55.2,17.0,-38.2,India,True
+CHN,37.5,9.2,-28.3,China,True
+MUS,36.2,8.5,-27.700000000000003,Mauritius,True
+THA,36.0,10.6,-25.4,Thailand,True
+PHL,27.6,5.4,-22.200000000000003,Philippines,True
+KEN,34.0,12.1,-21.9,Kenya,True
+CIV,33.0,12.6,-20.4,Côte d'Ivoire,True
+SEN,34.2,14.0,-20.200000000000003,Senegal,True

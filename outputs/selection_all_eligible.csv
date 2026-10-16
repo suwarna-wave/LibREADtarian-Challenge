@@ -1,0 +1,99 @@
+iso3,tariff_1995_pct,tariff_2005_pct,change_pp,country,selected
+ARG,10.5,10.6,0.09999999999999964,Argentina,False
+AUS,8.2,4.3,-3.8999999999999995,Australia,False
+AUT,6.7,2.7,-4.0,Austria,False
+BDI,36.9,19.6,-17.299999999999997,Burundi,False
+BEL,6.7,2.7,-4.0,Belgium,False
+BGD,81.2,16.8,-64.4,Bangladesh,True
+BGR,17.2,10.7,-6.5,Bulgaria,False
+BOL,9.7,7.2,-2.499999999999999,Bolivia (Plurinational State of),False
+BRA,12.0,12.3,0.3000000000000007,Brazil,False
+BRB,14.1,13.5,-0.5999999999999996,Barbados,False
+BWA,19.7,9.9,-9.799999999999999,Botswana,False
+CAF,18.6,17.9,-0.7000000000000028,Central African Republic,False
+CAN,10.1,4.5,-5.6,Canada,False
+CHE,3.6,2.7,-0.8999999999999999,Switzerland,False
+CHL,11.0,4.9,-6.1,Chile,False
+CHN,37.5,9.2,-28.3,China,True
+CIV,33.0,12.6,-20.4,Côte d'Ivoire,True
+CMR,18.7,18.4,-0.3000000000000007,Cameroon,False
+COG,18.6,19.1,0.5,Congo,False
+COL,13.3,11.9,-1.4000000000000004,Colombia,False
+CRI,10.2,7.0,-3.1999999999999993,Costa Rica,False
+CYP,14.0,2.7,-11.3,Cyprus,False
+CZE,6.7,2.7,-4.0,Czechia,False
+DEU,6.7,2.7,-4.0,Germany,False
+DNK,6.7,2.7,-4.0,Denmark,False
+DOM,20.0,9.0,-11.0,Dominican Republic,False
+DZA,22.9,15.8,-7.099999999999998,Algeria,False
+ECU,12.3,11.8,-0.5,Ecuador,False
+EGY,28.3,18.9,-9.400000000000002,Egypt,False
+ESP,6.7,2.7,-4.0,Spain,False
+EST,0.1,2.7,2.6,Estonia,False
+FIN,6.7,2.7,-4.0,Finland,False
+FRA,6.7,2.7,-4.0,France,False
+GBR,6.7,2.7,-4.0,United Kingdom,False
+GHA,15.0,13.2,-1.8000000000000007,Ghana,False
+GRC,6.7,2.7,-4.0,Greece,False
+GTM,10.2,2.7,-7.499999999999999,Guatemala,False
+HKG,0.0,0.0,0.0,"Hong Kong, China (SAR)",False
+HND,10.1,6.7,-3.3999999999999995,Honduras,False
+HUN,11.0,2.7,-8.3,Hungary,False
+IDN,17.0,6.5,-10.5,Indonesia,False
+IND,55.2,17.0,-38.2,India,True
+IRL,6.7,2.7,-4.0,Ireland,False
+IRN,20.7,18.7,-2.0,Iran (Islamic Republic of),False
+ISL,3.7,7.7,4.0,Iceland,False
+ISR,8.3,2.7,-5.6000000000000005,Israel,False
+ITA,6.7,2.7,-4.0,Italy,False
+JAM,14.0,7.3,-6.7,Jamaica,False
+JPN,6.3,3.3,-3.0,Japan,False
+KEN,34.0,12.1,-21.9,Kenya,True
+KOR,11.5,9.0,-2.5,Korea (Republic of),False
+LKA,26.1,11.3,-14.8,Sri Lanka,False
+LTU,4.5,2.7,-1.7999999999999998,Lithuania,False
+LUX,6.7,2.7,-4.0,Luxembourg,False
+MAR,22.8,19.4,-3.400000000000002,Morocco,False
+MDG,30.0,11.6,-18.4,Madagascar,False
+MEX,12.6,9.2,-3.4000000000000004,Mexico,False
+MLI,16.3,12.4,-3.9000000000000004,Mali,False
+MUS,36.2,8.5,-27.700000000000003,Mauritius,True
+MWI,30.8,13.5,-17.3,Malawi,False
+MYS,12.8,7.5,-5.300000000000001,Malaysia,False
+NAM,19.7,5.6,-14.1,Namibia,False
+NGA,21.8,11.6,-10.200000000000001,Nigeria,False
+NIC,10.7,6.8,-3.8999999999999995,Nicaragua,False
+NLD,6.7,2.7,-4.0,Netherlands,False
+NOR,5.9,8.6,2.6999999999999993,Norway,False
+NPL,16.1,14.7,-1.4000000000000021,Nepal,False
+NZL,8.5,5.0,-3.5,New Zealand,False
+OMN,5.7,3.8,-1.9000000000000004,Oman,False
+PAK,61.1,14.6,-46.5,Pakistan,True
+PAN,22.0,7.4,-14.6,Panama,False
+PER,17.6,9.2,-8.400000000000002,Peru,False
+PHL,27.6,5.4,-22.200000000000003,Philippines,True
+POL,18.4,2.7,-15.7,Poland,False
+PRT,6.7,2.7,-4.0,Portugal,False
+PRY,9.3,8.3,-1.0,Paraguay,False
+ROU,18.8,6.6,-12.200000000000001,Romania,False
+RUS,11.5,9.6,-1.9000000000000004,Russian Federation,False
+RWA,34.8,17.2,-17.599999999999998,Rwanda,False
+SEN,34.2,14.0,-20.200000000000003,Senegal,True
+SGP,0.4,0.1,-0.30000000000000004,Singapore,False
+SLE,25.8,13.6,-12.200000000000001,Sierra Leone,False
+SLV,10.2,6.4,-3.799999999999999,El Salvador,False
+SVK,6.1,2.7,-3.3999999999999995,Slovakia,False
+SWE,6.7,2.7,-4.0,Sweden,False
+SYR,14.8,19.6,4.800000000000001,Syrian Arab Republic,False
+THA,36.0,10.6,-25.4,Thailand,True
+TTO,14.1,7.8,-6.3,Trinidad and Tobago,False
+TUN,27.5,13.4,-14.1,Tunisia,False
+TUR,9.0,2.4,-6.6,Türkiye,False
+TZA,19.5,12.9,-6.6,Tanzania (United Republic of),False
+UGA,17.1,12.4,-4.700000000000001,Uganda,False
+URY,9.3,9.9,0.5999999999999996,Uruguay,False
+USA,5.9,3.2,-2.7,United States,False
+VEN,13.4,12.8,-0.5999999999999996,Venezuela (Bolivarian Republic of),False
+ZAF,19.7,8.5,-11.2,South Africa,False
+ZMB,25.6,14.6,-11.000000000000002,Zambia,False
+ZWE,9.2,16.7,7.5,Zimbabwe,False

@@ -1,18 +1,14 @@
-"""Execute analysis.ipynb; on failure print the failing cell's source + error. Usage: python research/run_nb.py"""
-import nbformat, sys
+"""Run the working notebook with this interpreter; use from the project root."""
+from pathlib import Path
+import sys,nbformat
 from nbclient import NotebookClient
-from nbclient.exceptions import CellExecutionError
-
-nb = nbformat.read("analysis.ipynb", as_version=4)
-client = NotebookClient(nb, timeout=600, kernel_name="python3", resources={"metadata": {"path": "."}})
-try:
-    client.execute()
-    nbformat.write(nb, "analysis.ipynb")
-    print("OK: notebook executed top to bottom")
-except CellExecutionError as e:
-    idx = next((i for i, c in enumerate(nb.cells) if c.cell_type == "code" and any(o.get("output_type") == "error" for o in c.get("outputs", []))), None)
-    print("FAILED in cell", idx and idx + 1)
-    if idx is not None:
-        print(nb.cells[idx].source[:1500])
-    print(str(e)[-900:])
-    sys.exit(1)
+from jupyter_client import KernelManager
+root=Path(__file__).resolve().parents[1]
+path = root/'analysis.ipynb'
+if not path.exists():
+    path = next(root.glob('LDD2026_*_Working.ipynb'))
+nb=nbformat.read(path,as_version=4)
+km=KernelManager(kernel_name='python3');km.kernel_spec.argv=[sys.executable,'-m','ipykernel_launcher','-f','{connection_file}']
+NotebookClient(nb,timeout=300,km=km,resources={'metadata':{'path':str(root)}}).execute()
+nbformat.write(nb,path)
+print('PASS: all notebook cells executed. Check outputs/validation.json for computational and external statuses.')

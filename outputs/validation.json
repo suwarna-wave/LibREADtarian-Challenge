@@ -1,0 +1,14 @@
+{
+  "raw_hashes_verified": true,
+  "unique_source_keys": true,
+  "validated_merges": true,
+  "full_post_endpoints": true,
+  "no_interpolation": true,
+  "all_screened_visible": true,
+  "all_main_contrary_visible": true,
+  "n_main": 8,
+  "dates_have_sources": true,
+  "embedded_inputs": true,
+  "organiser_scope_approved": null,
+  "declaration_approved": null
+}
