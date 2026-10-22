@@ -1,0 +1,47 @@
+# Publish only the files needed to understand and reproduce the analysis.
+# Everything else remains local. Already tracked extras must also be untracked.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/requirements-lock.txt
+!/analysis.ipynb
+
+!/data/
+/data/*
+!/data/EFW_original.xlsx
+!/data/UNDP_original.csv
+
+!/figures/
+/figures/*
+!/figures/Fig[1-8].png
+!/figures/Fig[1-8].pdf
+!/figures/chart_index.csv
+
+!/outputs/
+/outputs/*
+!/outputs/*.csv
+!/outputs/summary.json
+!/outputs/validation.json
+
+!/research/
+/research/*
+!/research/analysis_steps.py
+!/research/build_notebook.py
+!/research/run_nb.py
+!/research/reform_dates.csv
+!/research/sources.md
+!/research/source_register.csv
+!/research/policy_recommendation.md
+!/research/ai_disclosure.md
+
+# Environment, editor and notebook temporary files at any depth.
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+**/.DS_Store
+**/Thumbs.db
+**/~$*
+**/.~lock.*#
+**/.env
+**/.env.*
