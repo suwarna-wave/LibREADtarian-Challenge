@@ -121,7 +121,3 @@ Draft presentations, submission bundles, downloaded reference archives, caches a
 - Average income does not measure distribution or every dimension of well-being.
 - Nepal’s fiscal, employment, price and affected-product impacts are not estimated.
 - Computational checks do not establish organiser acceptance of dataset scope, release or declaration status.
-
-## Acknowledgement of assistance
-
-OpenAI Codex assisted with code, research, verification, figures, documentation and presentation preparation. Responsibility for reviewing and explaining the work remains with the participant. See the [AI-use disclosure](research/ai_disclosure.md).
