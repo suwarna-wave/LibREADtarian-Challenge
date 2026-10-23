@@ -1,6 +1,0 @@
-check,missing_post,n,above,median_excess_pp,median_post_cagr_pct,n_post_positive,full_pre_n,accelerated,screen_n,without_precise_date
-date shift -2,1,7,4,0.21419576303192134,2.0911727215670695,6,3,2,,
-date shift -1,0,8,4,-0.011122972705335243,2.3400947871970113,7,3,2,,
-date shift +0,0,8,4,0.06345606573127105,2.544313149489419,7,5,3,,
-date shift +1,0,8,3,-0.17665520372300292,2.3867272021142694,7,6,2,,
-date shift +2,0,8,4,0.06473243160800557,2.6318727677263287,7,6,2,,
