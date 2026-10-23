@@ -1,9 +1,7 @@
 figure,slide,title,data,file,notebook_cell
-Fig1,3,All ten screened countries: observed tariff histories,outputs/Fig1_data.csv,figures/Fig1.png,17
-Fig2,4,Broader trade institutions: the chain-linked EFW panel,outputs/Fig2_data.csv,figures/Fig2.png,18
-Fig3,12,Raw income histories before making event comparisons,outputs/Fig3_data.csv,figures/Fig3.png,19
-Fig4,5,Income around the documented tariff-cutting episodes,outputs/Fig4_data.csv,figures/Fig4.png,20
-Fig5,6,"Income growth: before, after, and in other countries",outputs/Fig5_data.csv,figures/Fig5.png,21
-Fig6,7,Which countries exceeded the broad comparator?,outputs/Fig6_data.csv,figures/Fig6.png,22
-Fig7,7,Timing sensitivity: the denominator follows valid data,outputs/Fig7_data.csv,figures/Fig7.png,23
-Fig8,9,Nepal: a different starting point from the largest cutters,outputs/Fig8_data.csv,figures/Fig8.png,24
+Fig1,3,All ten countries meet the same tariff-reduction rule,outputs/compact/Fig1_data.csv,figures/compact/Fig1.png,30
+Fig2,4,Income rose in seven of eight cases over ten years,outputs/compact/Fig2_data.csv,figures/compact/Fig2.png,30
+Fig3,5,Growth accelerated in three of five complete comparisons,outputs/compact/Fig3_data.csv,figures/compact/Fig3.png,30
+Fig4,6,Half exceeded the benchmark; the median gap was near zero,outputs/compact/Fig4_data.csv,figures/compact/Fig4.png,30
+Fig5,7,Small timing changes reverse the median comparison,outputs/compact/Fig5_data.csv,figures/compact/Fig5.png,30
+Fig6,8,Nepal began from a different tariff position,outputs/compact/Fig6_data.csv,figures/compact/Fig6.png,30

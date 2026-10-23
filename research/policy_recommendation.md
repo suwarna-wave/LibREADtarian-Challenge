@@ -36,3 +36,19 @@ The data support investigating a limited, transparent reduction in remaining tar
 Tariff revenue could fall before other revenues adjust, potentially putting public services under pressure; protected firms and workers may also bear concentrated adjustment losses. The project does not quantify those costs. A three-budget transition changes timing, not the existence of that tradeoff.
 
 The liberty argument favours predictable rules and wider freedom for purchasers and sellers to exchange, rather than protecting selected producers at the expense of diffuse buyers. That principle does not make the fiscal and worker costs disappear. The modest and mixed comparative evidence must remain visible alongside the recommendation.
+
+
+## Final presentation clarification — 22 October 2026
+
+Action type: **Modification**. This proposal applies to standard non-preferential ad valorem basic duties in HS25–97, retaining lower rates. The 20% cap and three-budget transition are normative design choices, not an empirical optimum. Figures 1 and 1H establish historical tariff reductions; Figures 4–7 constrain the growth claim; Figure 8 provides Nepal context. None identifies the proposed rate or forecasts its effect.
+
+The archived official FY2083/84 tariff schedule, PDF p. 215 (printed p. 203), shows 30% basic-duty entries for HS3918.10.10 and HS3919.10.00. Read all line-specific footnotes and concessions; these examples are not an affected-line count or a total-tax measure. The schedule and Act were archived on 16 October. Direct official PDF URLs failed recheck on 22 October, so no new claim of current legal completeness is made.
+
+Open research papers by Baunsgaard and Keen (2005), IMF WP/05/112, and Agbeyegbe et al. (2004), WP/04/178, strengthen the fiscal objection and caution against assuming automatic revenue recovery. They do not provide a Nepal estimate. A Laffer-style concept does not locate Nepal on a curve or show the proposal to be self-financing.
+
+
+## Compact presentation references — 23 October 2026
+
+This section supersedes earlier figure-number references for the compact deck. Figure 1 shows screened tariff reductions; Figures 2–5 show income, growth comparisons and sensitivity; Figure 6 shows Nepal's historical starting point. These inform the policy judgement but do not identify 20% as optimal or estimate its effects. The current deck states the exact action type, rule, authority, mechanism and objection on slides 8–10. No second recommendation is added.
+
+Full historical charts, detailed sensitivity tables and legal-page evidence remain in the working materials rather than additional appendix slides. Source and legal qualifications are on A4; legal evidence remains archived as of 16 October, with failed URL rechecks dated 22 October. No new current-law completeness is claimed.

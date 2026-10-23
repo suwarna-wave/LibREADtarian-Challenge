@@ -1,0 +1,195 @@
+[
+  {
+    "id": "IND1991",
+    "url": "https://www.indiabudget.gov.in/doc/bspeech/bs199192.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.indiabudget.gov.in/doc/bspeech/bs199192.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "CHN1992",
+    "url": "https://www.piie.com/publications/chapters_preview/31/2iie2474.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.piie.com/publications/chapters_preview/31/2iie2474.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "MUS1994",
+    "url": "https://www.wto.org/english/tratop_e/tpr_e/tp015_e.htm",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.wto.org/english/tratop_e/tpr_e/tp015_e.htm",
+    "content_type": "text/html",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "THA1995",
+    "url": "https://www.wto.org/english/tratop_e/tpr_e/tp021_e.htm",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.wto.org/english/tratop_e/tpr_e/tp021_e.htm",
+    "content_type": "text/html",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "PHL1995",
+    "url": "https://lawphil.net/executive/execord/eo1995/eo_288_1995.html",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://lawphil.net/executive/execord/eo1995/eo_288_1995.html",
+    "content_type": "text/html",
+    "first_bytes": 6829,
+    "accessible_http": true
+  },
+  {
+    "id": "PAK1997",
+    "url": "https://spdc.org.pk/assets/upload/5f4efd6fbdd6c-Evaluation%20of%20the%20Federal%20Budget%201999%202000-RR-23.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://spdc.org.pk/assets/upload/5f4efd6fbdd6c-Evaluation%20of%20the%20Federal%20Budget%201999%202000-RR-23.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "CIV1998",
+    "url": "https://www.imf.org/external/pubs/ft/scr/2000/cr00107.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.imf.org/external/pubs/ft/scr/2000/cr00107.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "SEN1998",
+    "url": "https://www.imf.org/external/pubs/ft/scr/1999/cr9905.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.imf.org/external/pubs/ft/scr/1999/cr9905.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "BGDtiming",
+    "url": "https://www.wto.org/gatt_docs/English/SULPDF/90080791.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.wto.org/gatt_docs/English/SULPDF/90080791.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "KENtiming",
+    "url": "https://www.imf.org/external/np/pfp/kenya/kenya.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.imf.org/external/np/pfp/kenya/kenya.pdf",
+    "content_type": "application/pdf",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "EFW",
+    "url": "https://www.fraserinstitute.org/economic-freedom/dataset",
+    "checked": "2026-10-22",
+    "status": 403,
+    "final_url": "https://www.fraserinstitute.org/economic-freedom/dataset",
+    "content_type": "text/html; charset=UTF-8",
+    "accessible_http": false
+  },
+  {
+    "id": "UNDP",
+    "url": "https://hdr.undp.org/data-center/documentation-and-downloads",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://hdr.undp.org/data-center/documentation-and-downloads",
+    "content_type": "text/html; charset=UTF-8",
+    "first_bytes": 29075,
+    "accessible_http": true
+  },
+  {
+    "id": "EFW2026",
+    "url": "https://www.cato.org/economic-freedom-world/2026",
+    "checked": "2026-10-22",
+    "status": 403,
+    "final_url": "https://www.cato.org/economic-freedom-world/2026",
+    "content_type": "text/html",
+    "accessible_http": false
+  },
+  {
+    "id": "EFWMETHOD",
+    "url": "https://www.cato.org/sites/cato.org/files/2026-10/EFW-2026-Appendix.pdf",
+    "checked": "2026-10-22",
+    "status": 403,
+    "final_url": "https://www.cato.org/sites/cato.org/files/2026-10/EFW-2026-Appendix.pdf",
+    "content_type": "text/html",
+    "accessible_http": false
+  },
+  {
+    "id": "NPLTARIFF",
+    "url": "https://giwmscdnone.gov.np/media/files/%E0%A4%8F%E0%A4%95%E0%A5%80%E0%A4%95%E0%A5%83%E0%A4%A4%20%E0%A4%AD%E0%A4%A8%E0%A5%8D%E0%A4%B8%E0%A4%BE%E0%A4%B0%20%E0%A4%AE%E0%A4%B9%E0%A4%B8%E0%A5%81%E0%A4%B2%20%E0%A4%A6%E0%A4%B0%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A9%E0%A5%A4%E0%A5%A6%E0%A5%AE%E0%A5%AA_qv4xx54.pdf",
+    "checked": "2026-10-22",
+    "accessible_http": false,
+    "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+    "id": "NPLACT",
+    "url": "https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%AD%E0%A4%A8%E0%A5%8D%E0%A4%B8%E0%A4%BE%E0%A4%B0%20%E0%A4%AE%E0%A4%B9%E0%A4%B8%E0%A5%81%E0%A4%B2%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A7%20_c1jgaky.pdf",
+    "checked": "2026-10-22",
+    "accessible_http": false,
+    "error": "HTTPSConnectionPool(host='giwmscdnone.gov.np', port=443): Max retries exceeded with url: /media/pdf_upload/%E0%A4%AD%E0%A4%A8%E0%A5%8D%E0%A4%B8%E0%A4%BE%E0%A4%B0%20%E0%A4%AE%E0%A4%B9%E0%A4%B8%E0%A5%81%E0%A4%B2%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%"
+  },
+  {
+    "id": "THACRISIS",
+    "url": "https://www.wto.org/english/tratop_e/tpr_e/tp122_e.htm",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.wto.org/english/tratop_e/tpr_e/tp122_e.htm",
+    "content_type": "text/html",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "CIVCONFLICT",
+    "url": "https://documents1.worldbank.org/curated/en/221511468243587148/pdf/271410IVC.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://documents1.worldbank.org/curated/en/221511468243587148/pdf/271410IVC.pdf",
+    "content_type": "application/pdf;charset=utf-8",
+    "first_bytes": 8192,
+    "accessible_http": true
+  },
+  {
+    "id": "FISCAL2005",
+    "url": "https://www.imf.org/external/pubs/ft/wp/2005/wp05112.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.imf.org/external/pubs/ft/wp/2005/wp05112.pdf",
+    "content_type": "application/pdf",
+    "sha256": "6799c1475d62876db21e9dfbf607d399df151490821550c4997f80d2fbc80d83",
+    "bytes": 415066,
+    "accessible_http": true
+  },
+  {
+    "id": "FISCAL2004",
+    "url": "https://www.imf.org/external/pubs/ft/wp/2004/wp04178.pdf",
+    "checked": "2026-10-22",
+    "status": 200,
+    "final_url": "https://www.imf.org/external/pubs/ft/wp/2004/wp04178.pdf",
+    "content_type": "application/pdf",
+    "sha256": "1b9744c8378c9010ed6d9b9291f06b50f731d3fdaa0bf009fb93ff6c95c53b81",
+    "bytes": 263876,
+    "accessible_http": true
+  }
+]

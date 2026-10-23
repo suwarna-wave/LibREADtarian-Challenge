@@ -331,3 +331,201 @@ checks={'raw_hashes_verified':True,'unique_source_keys':True,'validated_merges':
 (ROOT/'outputs/validation.json').write_text(json.dumps(checks,indent=2))
 display(ci)
 print('COMPUTATIONAL CHECKS PASSED. Organiser scope/release acceptance and declaration approval remain external pending checks.')
+
+# %% md
+## 9. Archived extended presentation exports and disclosure (22 October)
+This cell preserves the figures and historical slide mapping of the older extended presentation. Its 13-panel index is archival, not the current submission index. No new outcome estimates are added. Full tariff, trade-institution and income histories remain available here for verification. Section 10, the final compact cell, produces the six consecutive figure numbers and the canonical chart index for the current 14-page PDF. Notebook cell positions count both markdown and code cells from 1.
+
+OpenAI Codex assisted with dataset inspection, coding, debugging, source research, charts, verification, documentation and presentation assembly. Suwarna Pyakurel is responsible for reviewing and explaining all submitted claims. This is a solo entry. Organiser scope/release acceptance, declaration approval and the exact deadline remain unconfirmed.
+# %% code
+# PUBLICATION CHARTS: existing values, readable panels and final slide mapping.
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':15,'axes.labelsize':16,'xtick.labelsize':14,'ytick.labelsize':14,'axes.titlesize':17,'legend.fontsize':12})
+PUBLICATION_LAYOUT = __PRESENTATION_LAYOUT__
+PUB_ROWS=[]
+def publication_save(fig,key,title,caption,data):
+    fig.suptitle(title,x=.015,y=.99,ha='left',fontsize=18,fontweight='bold',color=INK)
+    fig.text(.015,.015,caption,ha='left',va='bottom',fontsize=11,color='#3D4F59')
+    fig.tight_layout(rect=(0,.15,1,.91))
+    for ext in ('png','pdf'): fig.savefig(ROOT/'figures'/f'{key}.{ext}',dpi=180,facecolor='white')
+    data.to_csv(ROOT/'outputs'/f'{key}_data.csv',index=False)
+    PUB_ROWS.append(dict(figure=key,slide=PUBLICATION_LAYOUT[key],title=title,data=f'outputs/{key}_data.csv',file=f'figures/{key}.png',notebook_cell=PUBLICATION_CELL))
+    display(fig);plt.close(fig)
+
+# Figure 1: all ten qualify; the main slide uses a legible endpoint comparison.
+d=selected.reset_index().rename(columns={'ISO_Code':'iso3','index':'iso3'})
+if 'iso3' not in d: d=d.rename(columns={d.columns[0]:'iso3'})
+d['reduction_pp']=-d.change_pp
+d['main_sample']=d.iso3.isin(MAIN)
+fig,ax=plt.subplots(figsize=(12,6.3))
+y=np.arange(len(d));ax.barh(y,d.reduction_pp,color=[BLUE if v else GREY for v in d.main_sample])
+ax.set_yticks(y,[c+(' *' if not m else '') for c,m in zip(d.country,d.main_sample)]);ax.invert_yaxis()
+ax.set_xlim(0,d.reduction_pp.max()*1.22);ax.set_xlabel('Fall in observed mean tariff, 1995–2005 (percentage points)')
+for j,row in enumerate(d.itertuples()): ax.text(row.reduction_pp+.7,j,f'{row.reduction_pp:.1f}',va='center',fontsize=14)
+ax.spines[['top','right']].set_visible(False)
+publication_save(fig,'Fig1','Figure 1. Ten countries meet the same tariff-reduction rule',
+ 'Source: supplied Fraser EFW Ratings, raw mean tariff (%), 1995 and 2005; n=10 of 98 eligible countries.\n*Bangladesh/Kenya: timing uncertain, excluded from eight-case main event analysis; retained in separate checks.',d)
+
+# Full observed tariff histories: retain all ten, split into two legible pages.
+for part,group in zip(['a','b'],[ALL[:5],ALL[5:]]):
+    d=policy[policy.iso3.isin(group)&policy.tariff_pct.notna()].sort_values(['iso3','year'])
+    fig,axes=plt.subplots(2,3,figsize=(12,6.6),sharey=True)
+    for ax,iso in zip(axes.flat,group):
+        s=d[d.iso3.eq(iso)];ax.plot(s.year,s.tariff_pct,'o-',ms=3,color=BLUE if iso in MAIN else GREY)
+        if iso in DATE:ax.axvline(DATE[iso],ls='--',color=RED,lw=1.4)
+        ax.set_title(NAME[iso]+(' *' if iso not in MAIN else ''));ax.set_ylim(bottom=0);ax.set_xlabel('Year');ax.set_ylabel('Mean tariff (%)',fontsize=13)
+        ax.set_xticks([1980,2000,2024]);ax.tick_params(labelsize=12)
+    for ax in list(axes.flat)[len(group):]:ax.set_visible(False)
+    publication_save(fig,'Fig1H'+part,f'Figure 1H{part}. Full observed tariff histories',
+      'Source: supplied Fraser EFW Ratings; observed 1975–2024; n=5 shown per page, 10 across both pages.\nDashed=reform year; *no main date. Five-yearly before 2000, annual afterwards; no interpolation.',d)
+
+# Chain-linked institutional context: not a tariff-only outcome.
+for part,group in zip(['a','b'],[MAIN[:4],MAIN[4:]]):
+    d=linked[linked.iso3.isin(group)&linked.trade_panel.notna()][['iso3','year','trade_panel']].sort_values(['iso3','year'])
+    fig,axes=plt.subplots(2,2,figsize=(12,6.7),sharey=True)
+    for ax,iso in zip(axes.flat,group):
+        s=d[d.iso3.eq(iso)];ax.plot(s.year,s.trade_panel,'o-',ms=3,color=BLUE);ax.axvline(DATE[iso],ls='--',color=RED)
+        ax.set_title(NAME[iso]);ax.set_ylim(0,10);ax.set_xlabel('Year');ax.set_ylabel('Area 4 (0–10)',fontsize=14);ax.set_xticks([1980,2000,2024])
+    publication_save(fig,'Fig2'+part,f'Figure 2{part}. Broader freedom to trade: institutional context',
+      'Source: Fraser chain-linked EFW Panel, Area 4, available 1970–2024; n=4 per page, 8 across both.\nHigher=greater trade freedom; includes non-tariff rules. Dashed=reform year. BGD/KEN: no main date.',d)
+
+# Raw income histories: full period and clearly labelled country-specific scales.
+for part,group in zip(['a','b','c'],[ALL[:4],ALL[4:8],ALL[8:]]):
+    d=undp[undp.iso3.isin(group)][['iso3','year','gnipc']].sort_values(['iso3','year'])
+    rows=2 if len(group)>2 else 1
+    fig,axes=plt.subplots(rows,2,figsize=(12,6.6),squeeze=False)
+    for ax,iso in zip(axes.flat,group):
+        s=d[d.iso3.eq(iso)];ax.plot(s.year,s.gnipc,lw=2.2,color=BLUE)
+        if iso in DATE:ax.axvline(DATE[iso],color=RED,ls='--')
+        ax.set_title(NAME[iso]);ax.set_xlabel('Year');ax.set_ylabel('GNI/person (2021 PPP$)',fontsize=13);ax.set_xticks([1990,2005,2023])
+        ax.tick_params(labelsize=12)
+    publication_save(fig,'Fig3'+part,f'Figure 3{part}. Full income histories before event comparisons',
+      f'Source: UNDP HDR25 components, 1990–2023; n={len(group)} shown, 10 across three pages. Country-specific y-scales.\nDashed=reform year where documented. Later years provide context beyond the ten-year event window.',d)
+
+# Figures 4–6 and 8: restyle the same exported values for projected readability.
+d=panel[['iso3','year','event_time','gni_index']].copy();fig,ax=plt.subplots(figsize=(12,6.4))
+for iso in MAIN:
+    s=d[d.iso3.eq(iso)].sort_values('event_time');ax.plot(s.event_time,s.gni_index,lw=1.7,alpha=.85,color=COLORS[iso],label=NAME[iso])
+med=d.groupby('event_time').gni_index.median();cnt=d.groupby('event_time').gni_index.count()
+ax.plot(med.index,med.values,color=INK,lw=3.5,label='Median (changing pre-sample)')
+bal=d[d.iso3.isin(balanced_iso)].groupby('event_time').gni_index.median();ax.plot(bal.index,bal.values,color=GOLD,lw=3,ls=':',label='Fixed-member median (n=5)')
+ax.axvline(0,ls='--',color=RED);ax.axhline(100,color=GREY,lw=1);ax.set_xlabel('Years from documented reform');ax.set_ylabel('Real GNI/person index (reform year=100)');ax.legend(ncol=2,fontsize=11,frameon=False,loc='upper left')
+d['event_year_n']=d.event_time.map(cnt)
+publication_save(fig,'Fig4','Figure 4. Income increased in seven of eight cases',
+ 'Source: UNDP HDR25; event −5 to +10, calendar coverage 1990–2008; n=8 after reform, 5–8 before.\nAll series equal 100 at zero by construction. BGD/KEN: separate timing checks. This is not a causal estimate.',d)
+
+d=res.copy();fig,ax=plt.subplots(figsize=(12,6.5));x=np.arange(len(d));w=.26
+ax.bar(x-w,d.pre5_cagr_pct,w,color=GREY,label='Five-year growth before reform');ax.bar(x,d.post_cagr_pct,w,color=BLUE,label='Ten-year growth after reform');ax.bar(x+w,d.benchmark_cagr_pct,w,color=GOLD,label='Same-years comparison median')
+ax.axhline(0,color=INK);ax.set_xticks(x,d.country,rotation=25,ha='right');ax.set_ylabel('Annualised real GNI/person growth (%)');ax.legend(fontsize=11,frameon=False)
+publication_save(fig,'Fig5','Figure 5. Growth accelerated in three of five complete comparisons',
+ 'Source: UNDP HDR25; reforms 1991–1998, ten-year endpoints 2001–2008; n=8; full prehistory n=5.\nMissing grey bars=unavailable, not zero. Comparison n=148–152; excludes all ten screened countries.',d)
+
+d=res.sort_values('excess_pp');fig,ax=plt.subplots(figsize=(12,6.2));ax.barh(d.country,d.excess_pp,color=[BLUE if v>0 else RED for v in d.excess_pp]);ax.axvline(0,color=INK)
+ax.set_xlabel('Post-reform growth minus comparison median (percentage points/year)')
+publication_save(fig,'Fig6','Figure 6. Four of eight countries exceeded the benchmark',
+ 'Source: UNDP HDR25; ten-year windows starting 1991–1998; n=8 dated cases; median difference +0.06 pp/year.\nRed=below benchmark, not necessarily falling income. CIV/SEN share a reform; benchmark is not a causal control.',d)
+
+# Figure 7 has two separate axes, not a dual y-axis: counts and median gaps.
+d=rob[rob['check'].str.startswith('date shift')].copy();labels=d['check'].str.replace('date shift ','')
+fig,axes=plt.subplots(1,2,figsize=(12,6.0));a,b=axes
+a.bar(labels,d.above,color=BLUE);a.set_ylim(0,9);a.set_ylabel('Countries above benchmark');a.set_title('(a) Count / valid countries')
+for j,row in enumerate(d.itertuples()):a.text(j,row.above+.13,f'{int(row.above)}/{int(row.n)}',ha='center',fontsize=16)
+b.bar(labels,d.median_excess_pp,color=[BLUE if v>=0 else RED for v in d.median_excess_pp]);b.axhline(0,color=INK);b.set_ylim(-.27,.31);b.set_ylabel('Median growth gap (pp/year)');b.set_title('(b) Median difference changes sign')
+for j,row in enumerate(d.itertuples()):b.text(j,row.median_excess_pp+(.015 if row.median_excess_pp>=0 else -.015),f'{row.median_excess_pp:+.2f}',ha='center',va='bottom' if row.median_excess_pp>=0 else 'top',fontsize=14)
+for ax in axes:ax.set_xlabel('Years added to documented reform date')
+publication_save(fig,'Fig7','Figure 7. Small timing changes affect the result',
+ 'Source: UNDP HDR25; ten-year windows, shifted reform years 1989–2000; n=7–8 valid cases.\n−2 loses one unavailable income start. Other checks: outputs/robustness.csv. No causal effect is identified.',d)
+
+peers=['NPL','BGD','IND','PAK','LKA'];d=policy[policy.iso3.isin(peers)&policy.tariff_pct.notna()][['iso3','year','tariff_pct']].sort_values(['iso3','year'])
+fig,ax=plt.subplots(figsize=(12,6.2))
+for iso in peers:
+    s=d[d.iso3.eq(iso)];ax.plot(s.year,s.tariff_pct,'o-',ms=3,lw=3.5 if iso=='NPL' else 1.7,label=NAME[iso])
+ax.set_ylim(bottom=0);ax.set_ylabel('Observed mean tariff (%)');ax.set_xlabel('Year');ax.legend(frameon=False,ncol=3,fontsize=12)
+publication_save(fig,'Fig8','Figure 8. Nepal began from a different tariff position',
+ 'Source: Fraser EFW Ratings, raw mean tariff, observed 1980–2024; n=5 regional peers; thick line=Nepal.\nNepal 2024: 12.9%. An average is not a statutory maximum or an estimate of current fiscal costs.',d)
+
+ci=pd.DataFrame(PUB_ROWS)
+ci.to_csv(ROOT/'figures/chart_index.csv',index=False)
+assert ci.figure.is_unique and len(ci)==13
+assert all((ROOT/p).exists() for p in ci.file) and all((ROOT/p).exists() for p in ci.data)
+assert (res.post_cagr_pct.gt(0).sum(),res.excess_pp.gt(0).sum(),res.pre5_cagr_pct.notna().sum())==(7,4,5)
+print('FINAL PUBLICATION CHECKS PASSED: 13 displayed chart panels, unchanged outcome calculations.')
+display(ci)
+
+# %% md
+## 10. Compact submission: six displayed figures and a four-slide appendix
+The final deck has ten content slides and four verification appendix slides. The six displayed figures below are numbered consecutively. Their values are recalculated from the same in-memory analysis tables, not retyped. Earlier charts, full histories, chain-linked panel context and extended sensitivity results remain in this working file and in archived exports; they are not additional presentation pages. Figure and CSV locations refer to the compact submission only.
+
+The 20% cap is a policy design choice, not an optimum identified by this analysis. The working-file disclosure remains accurate: OpenAI Codex assisted with research, code, charts, checks, documentation and presentation preparation. The participant is responsible for reviewing and explaining the work. Declaration approval, dataset scope/release acceptance, deadline and upload limits remain unconfirmed.
+# %% code
+# COMPACT CHARTS: Figures 1–6; identical data, updated presentation identifiers.
+COMPACT_LAYOUT = __COMPACT_LAYOUT__
+for folder in ('figures/compact','outputs/compact'):(ROOT/folder).mkdir(parents=True,exist_ok=True)
+# Keep the previous chart-index mapping separately; the root index is canonical.
+ci.to_csv(ROOT/'figures/chart_index_2026-10-22.csv',index=False)
+COMPACT_ROWS=[]
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.titlesize':14,'legend.fontsize':11})
+def compact_save(fig,number,title,caption,data):
+    key=f'Fig{number}'
+    fig.suptitle(f'Figure {number}. {title}',x=.015,y=.99,ha='left',fontsize=17,fontweight='bold',color=INK)
+    fig.text(.015,.012,caption,ha='left',va='bottom',fontsize=11,color='#3D4F59')
+    fig.tight_layout(rect=(0,.16,1,.91))
+    for ext in ('png','pdf'):fig.savefig(ROOT/'figures/compact'/f'{key}.{ext}',dpi=180,facecolor='white')
+    data.to_csv(ROOT/'outputs/compact'/f'{key}_data.csv',index=False)
+    COMPACT_ROWS.append(dict(figure=key,slide=COMPACT_LAYOUT[key],title=title,data=f'outputs/compact/{key}_data.csv',file=f'figures/compact/{key}.png',notebook_cell=COMPACT_CELL))
+    display(fig);plt.close(fig)
+
+d=selected.reset_index().rename(columns={'ISO_Code':'iso3','index':'iso3'})
+if 'iso3' not in d:d=d.rename(columns={d.columns[0]:'iso3'})
+d['reduction_pp']=-d.change_pp;d['main_sample']=d.iso3.isin(MAIN)
+fig,ax=plt.subplots(figsize=(12.2,4.9));y=np.arange(len(d));ax.barh(y,d.reduction_pp,color=[BLUE if b else GREY for b in d.main_sample])
+ax.set_yticks(y,[c+(' *' if not b else '') for c,b in zip(d.country,d.main_sample)]);ax.invert_yaxis();ax.set_xlim(0,d.reduction_pp.max()*1.15)
+ax.set_xlabel('Reduction in observed mean tariff, 1995–2005 (percentage points)')
+for j,r in enumerate(d.itertuples()):ax.text(r.reduction_pp+.7,j,f'{r.reduction_pp:.1f}',va='center',fontsize=12)
+ax.spines[['top','right']].set_visible(False)
+compact_save(fig,1,'All ten countries meet the same tariff-reduction rule',
+ 'Fraser EFW Ratings, raw mean tariff, 1995 and 2005; n=10 of 98 eligible countries. Bar origin=0.\n*Bangladesh/Kenya: no precise main tariff-event date; excluded from eight-case main analysis, retained in timing checks.',d)
+
+d=panel[['iso3','year','event_time','gni_index']].copy();fig,ax=plt.subplots(figsize=(12.2,4.9))
+for iso in MAIN:
+    s=d[d.iso3.eq(iso)].sort_values('event_time');ax.plot(s.event_time,s.gni_index,lw=1.6,color=COLORS[iso],label=NAME[iso])
+med=d.groupby('event_time').gni_index.median();cnt=d.groupby('event_time').gni_index.count()
+ax.plot(med.index,med.values,color=INK,lw=3.2,label='Median (changing pre-sample)')
+fixed=d[d.iso3.isin(balanced_iso)].groupby('event_time').gni_index.median();ax.plot(fixed.index,fixed.values,color=GOLD,lw=2.8,ls=':',label='Fixed-member median (n=5)')
+ax.axvline(0,ls='--',color=RED);ax.axhline(100,color=GREY,lw=1);ax.set_xlabel('Years from documented reform');ax.set_ylabel('Real GNI/person index (reform year=100)');ax.legend(ncol=3,fontsize=10.5,frameon=False,loc='upper left')
+d['event_year_n']=d.event_time.map(cnt)
+compact_save(fig,2,'Income rose in seven of eight cases over ten years',
+ 'UNDP HDR25; event −5 to +10, observed calendar years 1990–2008; n=8 after reform, 5–8 before.\nBGD/KEN: separate timing checks. All series equal 100 at zero by construction; medians do not identify a causal effect.',d)
+
+d=res.copy();fig,ax=plt.subplots(figsize=(12.2,4.9));x=np.arange(len(d));w=.26
+ax.bar(x-w,d.pre5_cagr_pct,w,color=GREY,label='Five-year growth before');ax.bar(x,d.post_cagr_pct,w,color=BLUE,label='Ten-year growth after');ax.bar(x+w,d.benchmark_cagr_pct,w,color=GOLD,label='Same-years comparison median')
+ax.axhline(0,color=INK);ax.set_xticks(x,d.country,rotation=18,ha='right');ax.set_ylabel('Annualised real GNI/person growth (%)');ax.legend(fontsize=10.5,frameon=False)
+compact_save(fig,3,'Growth accelerated in three of five complete comparisons',
+ 'UNDP HDR25; reforms 1991–1998; ten-year endpoints 2001–2008; n=8, complete five-year prehistory n=5.\nMissing grey bars=unavailable, not zero. Benchmark n=148–152; all ten screened countries excluded. Bars start at zero.',d)
+
+d=res.sort_values('excess_pp');fig,ax=plt.subplots(figsize=(12.2,4.9));ax.barh(d.country,d.excess_pp,color=[BLUE if v>0 else RED for v in d.excess_pp]);ax.axvline(0,color=INK)
+ax.set_xlabel('Post-reform growth minus comparison median (percentage points/year)')
+compact_save(fig,4,'Half exceeded the benchmark; the median gap was near zero',
+ 'UNDP HDR25; ten-year windows beginning 1991–1998; n=8; median gap +0.06 pp/year. Bars start at zero.\nRed=below benchmark, not necessarily falling income. BGD/KEN: timing checks only. CIV/SEN share a regional reform.',d)
+
+d=rob[rob['check'].str.startswith('date shift')].copy();labels=d['check'].str.replace('date shift ','')
+fig,(a,b)=plt.subplots(1,2,figsize=(12.2,4.9));a.bar(labels,d.above,color=BLUE);a.set_ylim(0,9);a.set_ylabel('Countries above benchmark');a.set_title('(a) Count / valid countries')
+for j,r in enumerate(d.itertuples()):a.text(j,r.above+.14,f'{int(r.above)}/{int(r.n)}',ha='center',fontsize=13)
+b.bar(labels,d.median_excess_pp,color=[BLUE if v>=0 else RED for v in d.median_excess_pp]);b.axhline(0,color=INK);b.set_ylim(-.27,.31);b.set_ylabel('Median growth gap (pp/year)');b.set_title('(b) Median difference changes sign')
+for j,r in enumerate(d.itertuples()):b.text(j,r.median_excess_pp+(.012 if r.median_excess_pp>=0 else -.012),f'{r.median_excess_pp:+.2f}',ha='center',va='bottom' if r.median_excess_pp>=0 else 'top',fontsize=12)
+for ax in (a,b):ax.set_xlabel('Years added to documented reform date')
+compact_save(fig,5,'Small timing changes reverse the median comparison',
+ 'UNDP HDR25; ten-year windows, shifted reform years 1989–2000; n=7–8 valid cases. Bars start at zero.\n−2 omits one unavailable income start; counts use valid cases. Complete sensitivity results: outputs/robustness.csv.',d)
+
+peers=['NPL','BGD','IND','PAK','LKA'];d=policy[policy.iso3.isin(peers)&policy.tariff_pct.notna()][['iso3','year','tariff_pct']].sort_values(['iso3','year'])
+fig,ax=plt.subplots(figsize=(12.2,4.9))
+for iso in peers:
+    s=d[d.iso3.eq(iso)];ax.plot(s.year,s.tariff_pct,'o-',ms=2.5,lw=3.3 if iso=='NPL' else 1.6,label=NAME[iso])
+ax.set_ylim(bottom=0);ax.set_ylabel('Observed mean tariff (%)');ax.set_xlabel('Year');ax.legend(frameon=False,ncol=3,fontsize=11)
+compact_save(fig,6,'Nepal began from a different tariff position',
+ 'Fraser EFW Ratings, raw mean tariff, observed 1980–2024; n=5 regional peers; thick line=Nepal; 2024 mean=12.9%.\nHistorical context only. A mean is not a statutory maximum, a current rate schedule, or a fiscal-impact estimate.',d)
+
+ci=pd.DataFrame(COMPACT_ROWS);ci.to_csv(ROOT/'figures/chart_index.csv',index=False)
+assert len(ci)==6 and list(ci.figure)==[f'Fig{i}' for i in range(1,7)]
+assert all((ROOT/p).exists() for p in ci.file) and all((ROOT/p).exists() for p in ci.data)
+assert (res.post_cagr_pct.gt(0).sum(),res.excess_pp.gt(0).sum(),res.pre5_cagr_pct.notna().sum())==(7,4,5)
+print('COMPACT CHECKS PASSED: six numbered figures; existing numerical results unchanged.');display(ci)
