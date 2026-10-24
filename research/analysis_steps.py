@@ -336,7 +336,7 @@ print('COMPUTATIONAL CHECKS PASSED. Organiser scope/release acceptance and decla
 ## 9. Archived extended presentation exports and disclosure (22 October)
 This cell preserves the figures and historical slide mapping of the older extended presentation. Its 13-panel index is archival, not the current submission index. No new outcome estimates are added. Full tariff, trade-institution and income histories remain available here for verification. Section 10, the final compact cell, produces the six consecutive figure numbers and the canonical chart index for the current 14-page PDF. Notebook cell positions count both markdown and code cells from 1.
 
-OpenAI Codex assisted with dataset inspection, coding, debugging, source research, charts, verification, documentation and presentation assembly. Suwarna Pyakurel is responsible for reviewing and explaining all submitted claims. This is a solo entry. Organiser scope/release acceptance, declaration approval and the exact deadline remain unconfirmed.
+OpenAI Codex helped with coding, resolving errors, and researching supporting articles. It also assisted with dataset inspection, figures, reproducibility checks, documentation, slide text, speaker notes and presentation assembly. Suwarna Pyakurel is responsible for reviewing and explaining all submitted claims. This is a solo entry. Organiser scope/release acceptance, declaration approval and the exact deadline remain unconfirmed.
 # %% code
 # PUBLICATION CHARTS: existing values, readable panels and final slide mapping.
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':15,'axes.labelsize':16,'xtick.labelsize':14,'ytick.labelsize':14,'axes.titlesize':17,'legend.fontsize':12})
@@ -455,7 +455,7 @@ display(ci)
 ## 10. Compact submission: six displayed figures and a four-slide appendix
 The final deck has ten content slides and four verification appendix slides. The six displayed figures below are numbered consecutively. Their values are recalculated from the same in-memory analysis tables, not retyped. Earlier charts, full histories, chain-linked panel context and extended sensitivity results remain in this working file and in archived exports; they are not additional presentation pages. Figure and CSV locations refer to the compact submission only.
 
-The 20% cap is a policy design choice, not an optimum identified by this analysis. The working-file disclosure remains accurate: OpenAI Codex assisted with research, code, charts, checks, documentation and presentation preparation. The participant is responsible for reviewing and explaining the work. Declaration approval, dataset scope/release acceptance, deadline and upload limits remain unconfirmed.
+The 20% cap is a policy design choice, not an optimum identified by this analysis. The working-file disclosure remains accurate: OpenAI Codex helped with coding, resolving errors, and researching supporting articles. It also assisted with dataset inspection, figures, reproducibility checks, documentation, slide text, speaker notes and presentation assembly. The participant is responsible for reviewing and explaining the work. Declaration approval, dataset scope/release acceptance, deadline and upload limits remain unconfirmed.
 # %% code
 # COMPACT CHARTS: Figures 1–6; identical data, updated presentation identifiers.
 COMPACT_LAYOUT = __COMPACT_LAYOUT__

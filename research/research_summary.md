@@ -65,4 +65,4 @@ The separate [compact PDF](../deck/compact_2026-10-23/LDD2026_SuwarnaPyakurel_De
 
 The [working notebook](../LDD2026_SuwarnaPyakurel_Working.ipynb) contains original input bytes and the reform ledger. Run cells top to bottom; see the root README and requirements.txt. The readable source is analysis_steps.py. The final compact-export cell follows the original charts and archived presentation exports.
 
-[All 20 references and their archived copies](README.md) retain public URLs, access dates and available hashes. OpenAI Codex assisted with research, code, checks, figures and drafting; [the disclosure](ai_disclosure.md) explains participant responsibility. Approval, submission and any competition score remain unclaimed.
+[All 20 references and their archived copies](README.md) retain public URLs, access dates and available hashes. OpenAI Codex helped with coding, resolving errors and researching supporting articles, as well as figures, checks and drafting; [the disclosure](ai_disclosure.md) explains participant responsibility. Approval, submission and any competition score remain unclaimed.

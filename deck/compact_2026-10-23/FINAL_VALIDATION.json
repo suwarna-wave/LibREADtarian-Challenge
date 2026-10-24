@@ -37,5 +37,18 @@
   ],
   "all_14_pages_visually_reviewed": true,
   "reference_pages_12_13_reviewed_at_full_size": true,
-  "earlier_exports_preserved_separately": true
+  "earlier_exports_preserved_separately": true,
+  "disclosure_wording_update": {
+    "date": "2026-10-24",
+    "notebook_code_and_outputs_unchanged": true,
+    "data_and_result_hashes_unchanged": true,
+    "pdf_pages": 14,
+    "changed_pages": [
+      2,
+      14
+    ],
+    "changed_pages_visually_checked": true,
+    "other_page_text_unchanged": true,
+    "fresh_notebook_execution_performed": false
+  }
 }
