@@ -200,8 +200,8 @@
     "accessed": "2026-10-16",
     "location": "Financial crisis is a realistic competing explanation for growth slowdown",
     "used_for": "Financial crisis is a realistic competing explanation for growth slowdown",
-    "local_file": "",
-    "sha256": ""
+    "local_file": "research/sources/final/tha_crisis1999.html",
+    "sha256": "9b8a6b03018d1b1992ad2673da89f4ab9a2ec70ab5a9babfb8593214b256f782"
   },
   {
     "id": "CIVCONFLICT",
@@ -212,8 +212,8 @@
     "accessed": "2026-10-16",
     "location": "Summary: instability since1999 and civil conflict2002; alternative explanation, not quantified here",
     "used_for": "Summary: instability since1999 and civil conflict2002; alternative explanation, not quantified here",
-    "local_file": "",
-    "sha256": ""
+    "local_file": "research/sources/final/civ_conflict2003.pdf",
+    "sha256": "9b26db13eec691e388c98097e94268e646d798908a4e94c76824d8c0cf9fe99a"
   },
   {
     "id": "FISCAL2005",
@@ -224,8 +224,8 @@
     "accessed": "2026-10-22",
     "location": "Abstract and conclusion; historical cross-country fiscal evidence, not a Nepal estimate",
     "used_for": "Revenue recovery is not automatic; strongest objection",
-    "local_file": "",
-    "sha256": ""
+    "local_file": "research/articles/Baunsgaard_Keen_2005_WP05112.pdf",
+    "sha256": "6799c1475d62876db21e9dfbf607d399df151490821550c4997f80d2fbc80d83"
   },
   {
     "id": "FISCAL2004",
@@ -236,7 +236,7 @@
     "accessed": "2026-10-22",
     "location": "Abstract; printed pp. 5–7, Section II.A; income/price/import-base responses",
     "used_for": "Tariff revenue depends on the rate and the taxable import base; no Nepal revenue peak estimated",
-    "local_file": "",
-    "sha256": ""
+    "local_file": "research/articles/Agbeyegbe_Stotsky_WoldeMariam_2004_WP04178.pdf",
+    "sha256": "1b9744c8378c9010ed6d9b9291f06b50f731d3fdaa0bf009fb93ff6c95c53b81"
   }
 ]

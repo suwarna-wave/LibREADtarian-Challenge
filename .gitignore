@@ -2,6 +2,7 @@
 # All other files stay local; ignored tracked files are also removed from the index.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/requirements.txt
 !/LDD2026_SuwarnaPyakurel_Working.ipynb
@@ -81,3 +82,45 @@
 **/.~lock.*#
 **/.env
 **/.env.*
+
+# Selected slide images and cited research documents published 24 October 2026.
+!/outputs/fiigures and charts/
+/outputs/fiigures and charts/*
+!/research/sources/
+/research/sources/*
+!/research/sources/final/
+/research/sources/final/*
+!/research/articles/
+/research/articles/*
+!/research/README.md
+!/research/research_summary.md
+!/research/sources/final/ind1991.pdf
+!/research/sources/final/chn1992.pdf
+!/research/sources/final/mus1995.html
+!/research/sources/final/given_tha1995.html
+!/research/sources/final/phl1995.html
+!/research/sources/final/pak1997.pdf
+!/research/sources/final/civ2000.pdf
+!/research/sources/final/sen1999.pdf
+!/research/sources/final/bgd_gatt1995.pdf
+!/research/sources/final/ken1996.pdf
+!/research/sources/final/nepal_tariff2026.pdf
+!/research/sources/final/nepal_tariff_act2081.pdf
+!/research/sources/final/tha_crisis1999.html
+!/research/sources/final/civ_conflict2003.pdf
+!/research/articles/Baunsgaard_Keen_2005_WP05112.pdf
+!/research/articles/Agbeyegbe_Stotsky_WoldeMariam_2004_WP04178.pdf
+!/research/sources/final/nepal_act_page1_verified.png
+!/research/sources/final/nepal_tariff_page215_verified.png
+!/research/sources/final/nepal_tariff_page4_verified.png
+!/research/sources/final/civ_box2_verified.png
+!/research/sources/final/sen_table27_verified.png
+!/outputs/fiigures and charts/Fig1.png
+!/outputs/fiigures and charts/Fig2.png
+!/outputs/fiigures and charts/Fig3.png
+!/outputs/fiigures and charts/Fig4.png
+!/outputs/fiigures and charts/Fig5.png
+!/outputs/fiigures and charts/Fig6.png
+!/outputs/fiigures and charts/Fig7.png
+!/outputs/fiigures and charts/Fig8.png
+!/outputs/fiigures and charts/figure_index.csv

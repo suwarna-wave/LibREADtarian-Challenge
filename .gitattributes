@@ -1,0 +1,8 @@
+# Treat document and image archives as binary in Git diffs.
+*.pdf binary
+*.png binary
+*.xlsx binary
+
+# Preserve original downloaded HTML bytes and CSV carriage returns.
+research/sources/final/*.html -whitespace
+*.csv whitespace=cr-at-eol
