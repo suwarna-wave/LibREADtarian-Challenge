@@ -13,13 +13,9 @@ Were large tariff reductions followed by stronger real income growth? This descr
 
 The image archive does not change the presentation or numerical results. Original eight-figure code/output locations are notebook cells 17–24; the six compact exports are generated in cell 30. Count all cells, including Markdown, from 1.
 
-## Current submission — compact revision, 23 October 2026
+## Working file and local presentations
 
-The current presentation contains **10 content slides and exactly 4 appendices**, 14 pages total. The closing is on slide 10. Earlier decks and exports are preserved locally as historical versions.
-
-- [Full submission PDF](deck/compact_2026-10-23/LDD2026_SuwarnaPyakurel_Deck.pdf)
-- [Speaker notes](deck/compact_2026-10-23/speaker_notes.md)
-- [Execution and presentation checks](deck/compact_2026-10-23/FINAL_VALIDATION.json)
+The reproducible analysis is in [LDD2026_SuwarnaPyakurel_Working.ipynb](LDD2026_SuwarnaPyakurel_Working.ipynb). Generated presentation PDFs, editable decks, speaker notes and preparation/checklist files are kept locally under `deck/` and excluded from Git. They are not required to run the analysis.
 
 Submission filenames: **LDD2026_SuwarnaPyakurel_Deck.pdf** and **LDD2026_SuwarnaPyakurel_Working.ipynb**. The working file is [LDD2026_SuwarnaPyakurel_Working.ipynb](LDD2026_SuwarnaPyakurel_Working.ipynb). Approval, dataset-scope/release acceptance, exact deadline and upload limits remain unconfirmed. No submission or organiser contact has been performed by the assistant.
 
@@ -57,7 +53,7 @@ Both numerical inputs and the date ledger are embedded in the notebook. Original
 7. Compare each case with median valid growth in 148–152 other countries over the same calendar years, excluding all ten screened cases. This benchmark is not a matched or untreated control.
 8. Test timing shifts, shorter windows, exclusion of China, related West African cases, balanced membership, threshold coverage and assumed Bangladesh/Kenya dates.
 
-## Six displayed figures
+## Six compact analysis figures
 
 | Figure / slide | Meaning | Exact data |
 |---|---|---|
@@ -98,11 +94,11 @@ python research/run_nb.py
 
 The readable calculation source is [analysis_steps.py](research/analysis_steps.py). Building the notebook clears outputs; execution regenerates them. There are 30 notebook cells, including 19 code cells. Earlier code calculates the full analysis; the last cell exports the six compact figures.
 
-This repository contains the final presentation PDF and speaker notes. Presentation builders, the template, editable decks, submission bundles and preparation documents remain local. Notebook execution regenerates all analysis exports. Git includes the six compact figures, supporting analytical tables and the selected research archive. Original slide-image copies, citation drafts and optional appendix reference files remain local and ignored.
+Presentation PDFs, speaker notes, builders, templates, editable decks, submission bundles and preparation documents remain local and excluded from Git. Notebook execution regenerates all analysis exports. Git includes the six compact figures, supporting analytical tables and the selected research archive. Original slide-image copies, citation drafts and optional appendix reference files remain local and ignored.
 
 ## Research, disclosure and limits
 
-Twenty references are listed in appendix A2–A3 and fully documented in [sources.md](research/sources.md) and the [source register](research/source_register.csv). All source titles link to actual public URLs. Access dates are retained accurately: original research on 16 October, two open fiscal papers on 22 October. The 22 October automated check recorded 15 HTTP successes and five failures/blocks; see the [access report](deck/compact_2026-10-23/source_access_checks.json). A failed check is not a successful current access claim.
+Twenty references are listed in appendix A2–A3 and fully documented in [sources.md](research/sources.md) and the [source register](research/source_register.csv). All source titles link to actual public URLs. Access dates are retained accurately: original research on 16 October, two open fiscal papers on 22 October. The 22 October automated check recorded 15 HTTP successes and five failures/blocks; see the [access report](research/source_access_checks_2026-10-22.json). A failed check is not a successful current access claim.
 
 Nepal legal evidence remains archived as of 16 October; current legal completeness is unconfirmed. External papers inform fiscal caution, not Nepal effect estimates. Laffer intuition does not establish a revenue peak or self-financing cuts.
 

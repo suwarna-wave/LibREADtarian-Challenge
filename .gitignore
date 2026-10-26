@@ -63,14 +63,6 @@
 !/research/source_register.json
 !/research/policy_recommendation.md
 !/research/ai_disclosure.md
-!/deck/
-/deck/*
-!/deck/compact_2026-10-23/
-/deck/compact_2026-10-23/*
-!/deck/compact_2026-10-23/LDD2026_SuwarnaPyakurel_Deck.pdf
-!/deck/compact_2026-10-23/speaker_notes.md
-!/deck/compact_2026-10-23/FINAL_VALIDATION.json
-!/deck/compact_2026-10-23/source_access_checks.json
 
 # Temporary and environment files at any depth.
 **/__pycache__/
@@ -119,3 +111,7 @@
 /outputs/fiigures and charts/
 /research/IEEE_REFERENCES.md
 /research/citation_link_checks_2026-10-26.json
+
+# Generated presentation packages stay local.
+/deck/
+!/research/source_access_checks_2026-10-22.json

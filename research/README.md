@@ -52,6 +52,6 @@ Full documents provide context; these page images are locators, not substitutes 
 
 ## Source checks and qualifications
 
-Research sources were accessed on 16 October 2026; the two IMF fiscal papers were accessed on 22 October. [The 22 October access report](../deck/compact_2026-10-23/source_access_checks.json) records 15 HTTP successes and five failed/blocked checks. No new live checks are claimed by this archive update. EFW publisher/methodology records without verified local copies remain linked in the register; failed-download pages are excluded.
+Research sources were accessed on 16 October 2026; the two IMF fiscal papers were accessed on 22 October. [The 22 October access report](source_access_checks_2026-10-22.json) records 15 HTTP successes and five failed/blocked checks. No new live checks are claimed by this archive update. EFW publisher/methodology records without verified local copies remain linked in the register; failed-download pages are excluded.
 
 Nepal legal documents are archived evidence from 16 October; current legal completeness remains unconfirmed. The IMF working papers present their authors’ research, not an institutional policy endorsement or a Nepal effect estimate. Dataset declaration approval, dataset-scope/release acceptance, deadline and upload limits remain pending.
