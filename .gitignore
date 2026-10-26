@@ -84,8 +84,6 @@
 **/.env.*
 
 # Selected slide images and cited research documents published 24 October 2026.
-!/outputs/fiigures and charts/
-/outputs/fiigures and charts/*
 !/research/sources/
 /research/sources/*
 !/research/sources/final/
@@ -115,12 +113,9 @@
 !/research/sources/final/nepal_tariff_page4_verified.png
 !/research/sources/final/civ_box2_verified.png
 !/research/sources/final/sen_table27_verified.png
-!/outputs/fiigures and charts/Fig1.png
-!/outputs/fiigures and charts/Fig2.png
-!/outputs/fiigures and charts/Fig3.png
-!/outputs/fiigures and charts/Fig4.png
-!/outputs/fiigures and charts/Fig5.png
-!/outputs/fiigures and charts/Fig6.png
-!/outputs/fiigures and charts/Fig7.png
-!/outputs/fiigures and charts/Fig8.png
-!/outputs/fiigures and charts/figure_index.csv
+
+# Local figure copies, numerical exports and citation drafts.
+/outputs/figures and charts/
+/outputs/fiigures and charts/
+/research/IEEE_REFERENCES.md
+/research/citation_link_checks_2026-10-26.json

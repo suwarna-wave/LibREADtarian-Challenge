@@ -7,7 +7,7 @@ Were large tariff reductions followed by stronger real income growth? This descr
 
 ## Slide images and research archive — added 24 October 2026
 
-- [Eight original slide figures](outputs/fiigures%20and%20charts/): Fig1.png–Fig8.png, downloaded from the linked Google Slides deck, with a [slide/cell index](outputs/fiigures%20and%20charts/figure_index.csv). These retain the original numbering; the compact six-figure version below is separate.
+- Original eight-figure slide images, matching CSVs and their index are local working copies in `outputs/figures and charts/`, excluded from Git. Their original notebook cells are 17–24; the six compact figures below have separate numbering.
 - [Research catalogue and archived articles](research/README.md): all 20 references, available source documents, two IMF working papers and verified evidence-page images.
 - [Research summary](research/research_summary.md): topic selection, workflow, findings, paper interpretation and policy qualifications.
 
@@ -98,7 +98,7 @@ python research/run_nb.py
 
 The readable calculation source is [analysis_steps.py](research/analysis_steps.py). Building the notebook clears outputs; execution regenerates them. There are 30 notebook cells, including 19 code cells. Earlier code calculates the full analysis; the last cell exports the six compact figures.
 
-This repository contains the final presentation PDF and speaker notes. Presentation builders, the template, editable decks, submission bundles and preparation documents remain local. Notebook execution regenerates all analysis exports. Git includes the six compact figures, the eight original slide images, supporting analytical tables and the selected research archive.
+This repository contains the final presentation PDF and speaker notes. Presentation builders, the template, editable decks, submission bundles and preparation documents remain local. Notebook execution regenerates all analysis exports. Git includes the six compact figures, supporting analytical tables and the selected research archive. Original slide-image copies, citation drafts and optional appendix reference files remain local and ignored.
 
 ## Research, disclosure and limits
 
