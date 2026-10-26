@@ -53,7 +53,7 @@ Both numerical inputs and the date ledger are embedded in the notebook. Original
 7. Compare each case with median valid growth in 148–152 other countries over the same calendar years, excluding all ten screened cases. This benchmark is not a matched or untreated control.
 8. Test timing shifts, shorter windows, exclusion of China, related West African cases, balanced membership, threshold coverage and assumed Bangladesh/Kenya dates.
 
-## Six compact analysis figures
+## Six compact analysis figures :- A Quick Glance to the Analysis
 
 | Figure / slide | Meaning | Exact data |
 |---|---|---|
