@@ -102,6 +102,7 @@ Twenty references are listed in appendix A2–A3 and fully documented in [source
 
 Nepal legal evidence remains archived as of 16 October; current legal completeness is unconfirmed. External papers inform fiscal caution, not Nepal effect estimates. Laffer intuition does not establish a revenue peak or self-financing cuts.
 
-OpenAI Codex helped with coding, resolving errors, and researching supporting articles. It also assisted with dataset inspection, reproducibility checks. Full [AI-use disclosure](research/ai_disclosure.md) appears in A4.
+OpenAI Codex helped with coding, resolving errors, and researching supporting articles. It also assisted with dataset inspection, reproducibility checks. Full [AI-use disclosure](research/ai_disclosure.md). Claude helped with verifying the actual guidelines with my works.
+
 
 No causal effect, optimal tariff, organiser approval, submission or guaranteed score is claimed. Mixed outcomes, exploratory selection, missing prehistory, common regional reforms and unmatched comparisons remain material limitations.
